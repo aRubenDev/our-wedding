@@ -1,6 +1,6 @@
 // src/components/SaveTheDate.jsx
 import imagen from "../assets/Save the Date R+E web whiter.jpg";
-import pdfFile from "../assets/save-the-date.pdf";
+import pdfFile from "../assets/Save the Date R+E for web.pdf";
 
 /* ------------------------------------------------------------------ *
  *  CONFIG — textos, imagen y PDF. Colores/fuentes en src/index.css.   *
