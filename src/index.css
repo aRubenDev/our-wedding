@@ -1,0 +1,49 @@
+/* src/index.css */
+
+/* ── FUENTES ───────────────────────────────────────────────────────────────
+   Opción A (por defecto): Google Fonts. Es la única URL del proyecto y solo
+   afecta a la tipografía. Para quitarla, borra el @import de abajo.
+
+   Opción B (recomendada si no quieres URLs): tus propias fuentes locales.
+   1) Pon los ficheros en src/assets/fonts/ (.woff2 ideal).
+   2) Descomenta y ajusta los @font-face de ejemplo.
+   3) Cambia los tokens --font-display / --font-sans del bloque @theme.        */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Ejemplo de fuentes locales (descomenta y ajusta nombres/rutas):
+@font-face {
+  font-family: "MiSerif";
+  src: url("./assets/fonts/mi-serif.woff2") format("woff2");
+  font-weight: 500 600; font-display: swap;
+}
+@font-face {
+  font-family: "MiSans";
+  src: url("./assets/fonts/mi-sans.woff2") format("woff2");
+  font-weight: 400 600; font-display: swap;
+}
+*/
+
+@import "tailwindcss";
+
+/* ── TEMA ────────────────────────────────────────────────────────────────────
+   Cambia aquí colores y fuentes. Se usan como clases: text-numbers,
+   bg-img-front, font-display, etc. Para usar TUS fuentes, sustituye los
+   nombres de --font-display / --font-sans por los de tus @font-face.          */
+@theme {
+  --color-paper:      #ffffff;
+  --color-frame:      #e4e2dd;
+  --color-numbers:    #6b4d35; /* 10/10 */
+  --color-label:      #80654c; /* eyebrow, ubicación, fecha, descargar */
+  --color-message:    #7a5d44;
+  --color-img-back:   #d9d9d7; /* recuadro de fondo */
+  /*--color-img-front:  #a8a8a6;  recuadro frontal */
+  --color-img-label:  #6f6f6f;
+
+  /** fuente Outfit (Google Fonts) para los textos, y Perpetua Titling MT Light para la fecha. */
+  --font-letters: "Outfit", serif;
+  --font-numbers: "Perpetua Titling MT Light", sans-serif;
+  --font-display: var(--font-letters);
+  --font-sans: var(--font-letters);
+}
+
+html, body, #root { height: 100%; margin: 0; }
