@@ -8,8 +8,7 @@
    1) Pon los ficheros en src/assets/fonts/ (.woff2 ideal).
    2) Descomenta y ajusta los @font-face de ejemplo.
    3) Cambia los tokens --font-display / --font-sans del bloque @theme.        */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@100&display=swap');
 
 /* Ejemplo de fuentes locales (descomenta y ajusta nombres/rutas):
 @font-face {
@@ -37,7 +36,7 @@
   --color-img-back:   #d9d9d7; /* recuadro de fondo */
   --color-img-label:  #6f6f6f;
 
-  /** fuente Outfit (Google Fonts) para los textos, y Perpetua Titling MT Light para la fecha. */
+  /** fuente Outfit thin (Google Fonts) para los textos */
   --font-letters: "Outfit", sans-serif;
   --font-display: var(--font-letters);
   --font-sans: var(--font-letters);
